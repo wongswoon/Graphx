@@ -54,4 +54,5 @@ val edgeRdd = sc.textFile(epath)
 ```
 2. save the memory
 use google protobuf and fastutils map
-we put neb in vertex props map, the map support by fastutils#Long2ObjectOpenHashMap, key is vertexid, value is the nebrs info that compress to bytes array with protobuf
+
+we put nebrs in vertex props which is a map support by fastutils#Long2ObjectOpenHashMap and the key is vertexid, value is the nebrs info that compressed to bytes array with protobuf
