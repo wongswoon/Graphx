@@ -98,7 +98,7 @@ the code below show how to find 1 hop nebrs
 When we have got the 1 hop nebrs which repersenting by VertexRDD `vertices1`,
 now we want to find 2 hop nebrs, we should reuse the origin graph, by using `joinVertices` rather not 
 new Graph(vertices1, g.edges)
-to reasign the vetices value to the graph.Benifiting by that, we can save memory for allocating the new graph.
+re-assign the vetices value to the graph. Benefiting from that, we can save memory for allocating the new graph.
 ```
  g = g.joinVertices(vertices1) {
       (vid, old, newAttr) => newAttr
