@@ -6,12 +6,12 @@ created a directed graph, using graphx.
 e.g.
 
 src|dest |weight
---------------
-a  | b  34
-a  | c  23
-b  | e  10
-c  | d  12
-d  | c  12
+----|-----|-----
+a  | b  | 34
+a  | c  |23
+b  | e  |10
+c  | d  |12
+d  | c  |12
 
 we got result like:
 
